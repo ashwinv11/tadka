@@ -28,6 +28,12 @@ Before pushing to production run:
 
 - [ashwinvaswani.com](https://ashwinvaswani.com)
 
+## Todo
+
+- Styled 404 page
+- SEO support
+- Better Readme
+
 ## MIT License
 
 Copyright (c) 2017 Ashwin Vaswani
