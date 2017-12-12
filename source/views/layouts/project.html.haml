@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{content: "IE=edge", "http-equiv": "X-UA-Compatible"}
+    %meta{charset: "utf-8"}
+    %meta{content: "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", name: "viewport"}
+    / BEGIN FAVICON
+    / Remember to generate your favicon here: https://realfavicongenerator.net/
+    / END FAVICON
+    / Use title if it's in the page YAML frontmatter
+    %title= "Tadka // " + current_page.data.title || "Tadka"
+    = stylesheet_link_tag 'global', async: true
+    = javascript_include_tag 'global-bundle', async: true
+  %body{class: page_classes}
+    = partial "partials/nav"
+    %main{role: "main", class: "project"}
+      .project__meta
+        %h1= current_article.title
+        %time= current_article.date.strftime(t("common.date_default"))
+      %article
+        = yield
+    = partial "partials/footer"

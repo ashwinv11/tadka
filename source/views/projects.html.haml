@@ -1,0 +1,21 @@
+---
+title: Ashwin Vaswani // Projects
+layout: projects
+---
+
+- if paginate && num_pages > 1
+  %span Page #{page_number} of #{num_pages}
+  = link_to t("project.prev_page"), prev_page if prev_page
+
+- page_articles.each_with_index do |article, i|
+  = link_to article do
+    %article
+      = tag :img, src: article.data.featured_img, alt: article.data.featured_img_alt
+      %div
+        %h3= article.title
+        %time= article.date.strftime(t("common.date_default"))
+        / - article.tags.each do |t|
+        /   %span= '//' + t + '//'
+
+- if paginate
+  = link_to t("project.next_page"), next_page if next_page

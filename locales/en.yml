@@ -1,0 +1,25 @@
+---
+en:
+  common:
+    date_default: '%b %e, %Y'
+  nav:
+    home: Home
+    projects: Projects
+  index:
+    hello: Hello World!
+    content_1: |
+      Welcome to Tadka! This is your homepage. You can create new pages in the source/views folder.
+      You can also specify which layout files to use on a per page basis by adding the `layout: your_layout`
+      to your page's YAML content. We also have the ability to add individual projects under the source/views/projects
+      folder. Simply run `middleman article YOUR_TITLE` in your terminal window and voíla, you have a new project!
+    content_2: |
+      To add page specific assets, create or use a custom layout file and import the bundle as needed. Webpack deals
+      with our styles and javascript files, but things like images, fonts, and other assets are still controlled by Middleman.
+  recipe:
+    content: |
+      Gently heat the oil in a skillet and add the cinnamon sticks, green cardamom pods and cloves.
+      When the cardamoms have turned white and the heads of the cloves have swollen,
+      you are ready to stir in the mustard and cumin seeds. When they are sizzling, stir in the scallions,
+      chiles, garlic and ginger.
+  footer:
+    copyright: Copyright © %{year}
