@@ -1,5 +1,7 @@
 ## Overview
 
+![Tadka Ingredients](https://raw.githubusercontent.com/ashwinv11/tadka/master/source/assets/images/spices.jpg)
+
 >In English, _tadka_ is known as “tempering.” It is the technique in which whole or ground spices are briefly roasted in oil or ghee in order to release their essential oils, thus making their flavor more aromatic.
 
 Tadka is a static website generator starter kit, built with modern tools such as Webpack and Middleman.
